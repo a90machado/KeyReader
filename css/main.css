@@ -1,0 +1,55 @@
+body{
+    background-color: #C4C4C4; 
+}
+
+h1{
+    font-size: 12.5em;  
+}
+
+h5{
+    font-size: 2rem;
+}
+
+.groupCards{
+    margin-top: 5rem;
+}
+
+.card{
+    margin: auto;
+    min-width: 12rem;
+    max-width: 18rem;
+}
+
+.card-header{
+    font-weight: bold;
+}
+.table{
+    max-width: 50rem; 
+    margin-top: 2rem;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.centerHorizontal{
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+}
+
+#alertFirst{
+    font-size: 1.5em;
+    font-weight: bold; 
+    text-align: center;
+    padding: 1rem; 
+    border-radius: 0.7rem;
+}
+
+#showContent, #tableDetails{
+    display: none;
+}
+

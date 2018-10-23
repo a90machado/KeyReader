@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <title>Key Code</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+    <div id="showContent" class="container-fluid">
+
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Key Code Reader</a>
+            <button onclick="showTable()" class="btn btn-light">Table</button>
+        </nav>
+
+        <h1 class="showKeycode text-center"></h1>
+
+        <div class="container text-center groupCards">
+            <div class="row">
+                <div class="card bg-light mb-3">
+                    <div class="card-header">event.key</div>
+                    <div class="card-body">
+                        <h5 id="showKey" class="card-title"></h5>
+                    </div>
+                </div>
+
+                <div class="card bg-light mb-3">
+                    <div class="card-header">event.keycode</div>
+                    <div class="card-body">
+                        <h5 class="card-title showKeycode"></h5>
+                    </div>
+                </div>
+
+                <div class="card bg-light mb-3">
+                    <div class="card-header">event.code</div>
+                    <div class="card-body">
+                        <h5 id="showCode" class="card-title"></h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="hideContent" class="center">
+        <p id="alertFirst" class="alert-info">Press any key to get the JavaScript event keycode</p>
+    </div>
+
+    <div id="tableDetails" class="container centerHorizontal">
+        <div class="row" style="margin-top:0.5rem; ">
+            <div class="col text-right">
+                <button class="btn btn-light" onclick="showTable()"><i class="fas fa-arrow-left"></i></button>
+            </div>
+        </div>
+
+
+        <table id="keyTable" class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="width: 5rem;">Key</th>
+                    <th style="text-align:center;">Key Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/dataTable.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
